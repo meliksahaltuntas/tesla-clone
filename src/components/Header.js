@@ -13,9 +13,12 @@ function Header() {
 
     return (
         <Container>
-            <a>
-                <img src='/images/logo.svg' />
+            
+            <a >
+                <img  style={{height:"90px"}} src='https://assets.website-files.com/5ee732bebd9839b494ff27cd/5ef0ca8e5f0ed695da5a16bf_BQwukuZwwwXrg27B9Le2Q6-p-1600.png' />
             </a>
+            
+           
             <Menu>
                 {cars && cars.map((car, index) => (<a key={index} href="#">{car}</a>))}
                 {/* <a href='#'>Model S</a>
@@ -58,7 +61,7 @@ export default Header
 
 const Container = styled.div`
 
-min-height:60px;
+min-height:90px;
 position:fixed;
 display:flex;
 align-items:center;

@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 function Section(props) {
     return (
@@ -22,7 +24,7 @@ function Section(props) {
 
                     </ButtonGroup>
                 </Fade>
-                <DownArrow src="/images/down-arrow.svg" />
+                <DownArrow><KeyboardArrowDownIcon/></DownArrow>
 
             </Buttons>
 
@@ -86,12 +88,12 @@ margin:10px;
 
 `
 
-const DownArrow = styled.img`
-height:40px;
+const DownArrow = styled.div`
+height:50px;
 animation:animateDown infinite 1.5s;
 overflow-x:hidden;
 position: relative;
-left: 16rem;
+left: 16.5rem;
 @media (max-width:768px){
     position: relative;
     left: 7rem;
