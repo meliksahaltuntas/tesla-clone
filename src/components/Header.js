@@ -29,7 +29,8 @@ function Header() {
             <RightMenu>
                 <a href='#'>Shop</a>
                 <a href='#'>Tesla Account</a>
-                <CustomMenu onClick={() => setBurgerStatus(true)} />
+                <Burger><CustomMenu onClick={() => setBurgerStatus(true)} /></Burger>
+                
             </RightMenu>
             <BurgerNav show={burgerStatus}>
                 <CloseWrapper>
@@ -86,11 +87,17 @@ justify-content:center;
     flex-wrap:nowrap;
 
  }
- @media(max-width:768px){
+  @media(max-width:768px){
     display:none;
  }
 
+
 `
+const Burger = styled.div`
+@media(max-width:768px){
+    display:none;
+ }`
+
 
 const RightMenu = styled.div`
 display:flex;
@@ -108,6 +115,9 @@ a{
 
 const CustomMenu = styled(MenuIcon)`
 cursor:pointer;
+@media(max-width:768px){
+    display:none;
+ }
 `
 
 
@@ -137,10 +147,18 @@ li{
         font-weight:600;
     }
 }
+@media (max-width:768px){
+   display:none;
+
+}
 `
 
 const CustomClose = styled(CloseIcon)`
 cursor:pointer;
+@media(max-width:768px){
+    display:none;
+ }
+
 
 
 `
@@ -148,4 +166,5 @@ cursor:pointer;
 const CloseWrapper = styled.div`
 display:flex;
 justify-content:flex-end;
+
 `

@@ -97,6 +97,7 @@ left: 16.5rem;
 @media (max-width:768px){
     position: relative;
     left: 7rem;
+
 }
 
 
